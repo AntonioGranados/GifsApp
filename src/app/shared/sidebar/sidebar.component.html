@@ -1,0 +1,11 @@
+  <!-- Sidebar -->
+  <div class="bg-dark broder-right p-3" id="sidebar">
+    <h3 class="text-light">Gifs-App</h3>
+    <hr class="text-light">
+    <div class="list-group list-reset">
+      <a href="#" class="list-group-item list-group-item-action" *ngFor="let palabra of historial" (click)="buscar(palabra)">
+        {{palabra | titlecase}}
+      </a>
+    </div>
+  </div>
+  <!-- Fin del Sidebar -->
